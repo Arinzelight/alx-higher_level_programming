@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Make a PUT request with curl to 0.0.0.0:5000/catch_me
-curl -s -X PUT 0.0.0.0:5000/catch_me -L -d "user_id=98" -H "Origin: HolbertonSchool"
-
-# Print an empty line to match the example output
-printf "\n"
+# Make a POST request to 0.0.0.0:5000/catch_me with a custom User-Agent header
+curl -X POST -H "User-Agent: I am a curl request" http://0.0.0.0:5000/catch_me -d "You got me!"
 
