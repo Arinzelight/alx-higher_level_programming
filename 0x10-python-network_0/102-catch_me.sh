@@ -1,4 +1,4 @@
 #!/bin/bash
-# Make a PUT request to 0.0.0.0:5000/catch_me with a custom User-Agent header
-curl -sX PUT -d 'user_id=98' -H "Origin: HolbertonSchool" http://0.0.0.0:5000/catch_me
+# script that makes a request to 0.0.0.0:5000/catch_me that causes the server to respond with a message containing You got me!, in the body of the response.
+curl -sX PUT -d -L 'user_id=98' -H "Origin: HolbertonSchool" 0.0.0.0:5000/catch_me
 
